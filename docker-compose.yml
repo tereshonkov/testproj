@@ -27,6 +27,7 @@ services:
       - ./.srv/wordpress:/var/www/html
       - ./themes/:/var/www/html/wp-content/themes/   #Указываем путь к папке с темами (теперь можно добавлять темы локально)
       - ./plugins/:/var/www/html/wp-content/plugins/ #Указываем путь к папке с плагинами (теперь можно добавлять плагины локально)
+      - ./mu-plugins/:/var/www/html/wp-content/mu-plugins/ #Указываем путь к папке с must-use плагинами (теперь можно добавлять mu-плагины локально)
       - ./.srv/custom.ini:/usr/local/etc/php/conf.d/custom.ini #Подключаем кастомный php.ini   https://fullsiteediting.com/block-theme-generator/
     depends_on:
       - mysql
