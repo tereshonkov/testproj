@@ -46,6 +46,18 @@ function create_block_blocks_gamestore_block_init() {
 	if ( function_exists( 'wp_register_block_metadata_collection' ) ) {
 		wp_register_block_metadata_collection( __DIR__ . '/build', __DIR__ . '/build/blocks-manifest.php' );
 	}
+
+	add_filter('block_categories_all', function( $categories ) {
+		return array_merge(
+			$categories,
+			[
+				[
+					'slug'  => 'gamestore',
+					'title' => __( 'GameStore Blocks', 'blocks-gamestore' ),
+				],
+			]
+		);
+	});
 	/**
 	 * Registers the block type(s) in the `blocks-manifest.php` file.
 	 *
