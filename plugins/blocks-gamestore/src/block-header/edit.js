@@ -1,13 +1,16 @@
+// Тут пишем код редактора блока.
 import {
-	useBlockProps,
-	InnerBlocks,
-	InspectorControls,
+	useBlockProps, // Основной контейнер блока, кастомынй хук для получения пропсов блока
+	InnerBlocks, // Дает возможность вставлять вложенные блоки внутри текущего блока
+	InspectorControls, // Панель настроек блока в редакторе (правальная боковая панель)
 } from "@wordpress/block-editor";
-import { PanelBody, TextControl } from "@wordpress/components";
+import {
+	PanelBody, // Панель с настройками
+	TextControl // Текстовое поле для ввода URL ссылки на зону для участников
+} from "@wordpress/components";
 import "./editor.scss";
-
 export default function Edit({ attributes, setAttributes }) {
-	const { memberLink, cartLink } = attributes;
+	const { memberLink, cartLink } = attributes; // Деструктуризация атрибутов блока для удобного доступа
 	return (
 		<>
 			<InspectorControls>

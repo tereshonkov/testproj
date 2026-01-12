@@ -57,7 +57,7 @@ function create_block_blocks_gamestore_block_init() {
 				],
 			]
 		);
-	});
+	}); // Добавление новой категории блоков
 	/**
 	 * Registers the block type(s) in the `blocks-manifest.php` file.
 	 *
