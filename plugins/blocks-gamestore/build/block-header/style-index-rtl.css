@@ -1,14 +1,65 @@
 /*!****************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/block-header/style.scss ***!
   \****************************************************************************************************************************************************************************************************************************************************/
-/**
- * The following styles get applied both on the front of your site
- * and in the editor.
- *
- * Replace them with your own styles or remove the file completely.
- */
-.wp-block-create-block-blocks-gamestore {
-  background-color: #21759b;
-  color: #fff;
-  padding: 2px;
+.wp-block-blocks-gamestore-blocks-header {
+  width: 100%;
+  background: var(--background-default);
+  color: #0E0D0F;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 2.1px;
+  line-height: 140%;
+  font-size: 14px;
+}
+.wp-block-blocks-gamestore-blocks-header a {
+  text-decoration: none;
+}
+.wp-block-blocks-gamestore-blocks-header .inner-header {
+  display: flex;
+  padding: 30px 32px;
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+.wp-block-blocks-gamestore-blocks-header .left-section {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+}
+.wp-block-blocks-gamestore-blocks-header .left-section .site-logo img {
+  max-height: 40px;
+  width: auto;
+}
+.wp-block-blocks-gamestore-blocks-header .left-section .site-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--wp--preset--color--primary);
+  text-decoration: none;
+}
+.wp-block-blocks-gamestore-blocks-header .left-section .wp-block-navigation {
+  margin-top: 0;
+}
+.wp-block-blocks-gamestore-blocks-header .right-section {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.wp-block-blocks-gamestore-blocks-header .right-section .header-search, .wp-block-blocks-gamestore-blocks-header .right-section .header-mode-switcher {
+  cursor: pointer;
+}
+.wp-block-blocks-gamestore-blocks-header .right-section .header-member-link {
+  padding: 12px 20px;
+  border: 1px solid var(--divider-main);
+  border-radius: 5px;
+  cursor: pointer;
+}
+.wp-block-blocks-gamestore-blocks-header .right-section .header-member-link a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--text-primary);
 }
