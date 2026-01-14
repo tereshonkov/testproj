@@ -10,6 +10,12 @@
 
 /* Editor-scoped styles: mirror the front-end layout but scoped under the editor wrapper so rules apply in Gutenberg */
 
+.block-editor-block-list__layout {
+  display: flex !important;
+  gap: 48px;
+  align-items: center;
+}
+
 .editor-styles-wrapper .wp-block-blocks-gamestore-blocks-header {
   width: 100%;
   background: var(--background-default);
